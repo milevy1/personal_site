@@ -6,7 +6,7 @@ class ErrorpageTest < CapybaraTestCase
     visit '/matt'
 
     assert page.has_content?("Page not found.")
-    assert_equal 400, page.status_code
+    assert_equal 404, page.status_code
   end
 
 end
